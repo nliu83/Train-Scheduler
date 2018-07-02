@@ -1,0 +1,55 @@
+#PgTitle {
+    font-family: 'Gilda Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+
+#PgSubtitle {
+    font-family: 'Gilda Display', serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#jumbotron {
+    background-color: brown;
+}
+
+.table-headings {
+    font-family: 'Gilda Display', serif;
+}
+
+.form-control {
+    font-family: 'Gilda Display', serif;
+    border: 10px;
+    
+}
+
+.form-label {
+    font-family: 'Gilda Display', serif;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.table-heading, .form-heading {
+    font-family: 'Gilda Display', serif;
+    font-size: 20px;
+    background-color: teal;
+    color: white;
+}
+
+#add-train-form, #current-train-schedule {
+    border-color: teal;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#submitbtn {
+    border: 15px;
+}
+
+td {
+    font-family: 'Gilda Display', serif;
+}

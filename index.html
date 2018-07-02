@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Train Scheduler</title>
+        <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron jumbotron-fluid" id='jumbotron'>
+                <div class="title-container">
+                    <h1 id='PgTitle'>Anytime is Train Time</h1>
+                    <h2 id='PgSubtitle'>Choo Choo. Chee Chee</h2>
+                </div>
+            </div>
+
+            <table class="table" id='current-train-schedule'>
+                    <p class='table-heading'>Current Train Schedule</p>
+                    <thead>
+                      <tr>
+                        <th scope="col" class='table-headings'>Train Name</th>
+                        <th scope="col" class='table-headings'>Destination</th>
+                        <th scope="col" class='table-headings'>Frequency (min)</th>
+                        <th scope="col" class='table-headings'>Time of Next Arrival</th>
+                        <th scope="col" class='table-headings'>Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+            </table>
+
+            <form>
+                
+                <div class="form-group" id='add-train-form'>
+                    <p class='form-heading'>Add Train</p>
+                    <label for="train-name" class='form-label'>Train Name</label>
+                    <input type="train-name" class="form-control" id="train-name" placeholder="What is the name of the train?">
+                    <label for="train-destination" class='form-label'>Destination</label>
+                    <input type="train-destination" class="form-control" id="train-destination" placeholder="Where is the train going?">
+                    <label for="First-Train-Time" class='form-label'>First Train Time (HH:MM - military time)</label>
+                    <input type="First-Train-Time" class="form-control" id="First-Train-Time" placeholder="When is the first time the train takes off?">
+                    <label for="train-frequency" class='form-label'>Frequency (min)</label>
+                    <input type="train-frequency" class="form-control" id="train-frequency" placeholder="How often does this train run?">
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg" id='submitbtn'>Submit</button>
+                </div>
+
+            </form>
+        
+    
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script type="text/javascript" src="assets/train.js"></script>
+    </body>
+</html>
