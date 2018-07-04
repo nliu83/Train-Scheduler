@@ -7,7 +7,7 @@ $(document).ready(function() {
         
         var nTrainDestination = $('#train-destination').val().trim();
             
-        var nFirstTrainTime = $('#First-Train-Time').val().trim();
+        //var nFirstTrainTime = $('#First-Train-Time').val().trim();
             
         var nTrainFrequency = $('#train-frequency').val().trim();
     
@@ -16,16 +16,27 @@ $(document).ready(function() {
 
         var TrainNameTd = $('<td>').text(nTrainName);
         var TrainDestinationTd = $('<td>').text(nTrainDestination);
-        var FirstTrainTimeTd = $('<td>').text(nFirstTrainTime);
+        //var TimeNextArrivalTd = $('<td>').text();
+        
         var TrainFrequencyTd = $('<td>').text(nTrainFrequency);
 
-        tRow.append(TrainNameTd, TrainDestinationTd, FirstTrainTimeTd, TrainFrequencyTd);
+        tRow.append(TrainNameTd, TrainDestinationTd, TrainFrequencyTd);
         tBody.append(tRow);
+
+        $('#train-name').val('');
+
+        $('#train-destination').val('');
+
+        $('#First-Train-Time').val('');
+ 
+        $('#train-frequency').val('');
+
     }
 
     $('#submitbtn').on('click', function(){
 
         displayUserInputs();
-        
+
+
     })
 });
